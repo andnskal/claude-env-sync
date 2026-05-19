@@ -261,6 +261,47 @@ if (Test-Path $SkillsSrc) {
 Write-Host ""
 
 # ════════════════════════════════════════════════
+#  STEP 5+. Claude Desktop skills (%APPDATA%\Claude\skills)
+# ════════════════════════════════════════════════
+$DesktopSkillsSrc = Join-Path $Snapshot 'skills-desktop'
+$DesktopSkillsDst = Join-Path $env:APPDATA 'Claude\skills'
+if (Test-Path $DesktopSkillsSrc) {
+    Write-Host "═══ STEP 5+. Claude Desktop skills 복원 ═══" -ForegroundColor Cyan
+    if ((Test-Path $DesktopSkillsDst) -and (-not $DryRun)) {
+        Remove-Item $DesktopSkillsDst -Recurse -Force
+    }
+    $parentDir = Split-Path $DesktopSkillsDst -Parent
+    if (-not (Test-Path $parentDir)) {
+        if (-not $DryRun) { New-Item -ItemType Directory -Path $parentDir -Force | Out-Null }
+    }
+    if (-not $DryRun) { Copy-Item $DesktopSkillsSrc $DesktopSkillsDst -Recurse -Force }
+    $cnt = (Get-ChildItem $DesktopSkillsSrc -Directory).Count
+    Write-Host "  ✓ %APPDATA%\Claude\skills 복원 ($cnt 개)" -ForegroundColor Green
+    Write-Host ""
+}
+
+# ════════════════════════════════════════════════
+#  STEP 5++. Claude Code 추가 폴더 복원 (plugins, commands, templates)
+# ════════════════════════════════════════════════
+$hasExtras = $false
+foreach ($extra in @('plugins','commands','templates')) {
+    if (Test-Path (Join-Path $Snapshot $extra)) { $hasExtras = $true; break }
+}
+if ($hasExtras) {
+    Write-Host "═══ STEP 5++. Claude Code 추가 폴더 복원 ═══" -ForegroundColor Cyan
+    foreach ($extra in @('plugins','commands','templates')) {
+        $src = Join-Path $Snapshot $extra
+        $dst = Join-Path $ClaudeHome $extra
+        if (Test-Path $src) {
+            if ((Test-Path $dst) -and (-not $DryRun)) { Remove-Item $dst -Recurse -Force }
+            if (-not $DryRun) { Copy-Item $src $dst -Recurse -Force }
+            $cnt = (Get-ChildItem $src -ErrorAction SilentlyContinue).Count
+            Write-Host "  ✓ ~/.claude/$extra 복원 ($cnt 개)" -ForegroundColor Green
+        }
+    }
+    Write-Host ""
+}
+# ════════════════════════════════════════════════
 #  STEP 6. Python / npm 패키지 일괄 설치
 # ════════════════════════════════════════════════
 Write-Host "═══ STEP 6. 패키지 복원 ═══" -ForegroundColor Cyan
