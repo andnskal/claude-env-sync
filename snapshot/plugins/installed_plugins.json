@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "plugins": {
+    "context7@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\context7\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T15:24:29.327Z",
+        "lastUpdated": "2026-03-14T15:24:29.327Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "github@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\github\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T15:25:07.752Z",
+        "lastUpdated": "2026-03-14T15:25:07.752Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T16:16:29.354Z",
+        "lastUpdated": "2026-03-14T16:16:29.354Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "playwright@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\playwright\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T16:16:33.811Z",
+        "lastUpdated": "2026-03-14T16:16:33.811Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\typescript-lsp\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-14T16:16:36.068Z",
+        "lastUpdated": "2026-03-14T16:16:36.068Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\pyright-lsp\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-14T16:16:38.289Z",
+        "lastUpdated": "2026-03-14T16:16:38.289Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\code-review\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T16:16:40.634Z",
+        "lastUpdated": "2026-03-14T16:16:40.634Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "security-guidance@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T16:16:42.916Z",
+        "lastUpdated": "2026-03-14T16:16:42.916Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\code-simplifier\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-14T16:16:45.248Z",
+        "lastUpdated": "2026-03-14T16:16:45.248Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "commit-commands@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\claude-plugins-official\\commit-commands\\d5c15b861cd2",
+        "version": "d5c15b861cd2",
+        "installedAt": "2026-03-14T16:16:47.473Z",
+        "lastUpdated": "2026-03-14T16:16:47.473Z",
+        "gitCommitSha": "d5c15b861cd23e3102215c26020368ad5134dc47"
+      }
+    ],
+    "vercel-plugin@vercel-vercel-plugin": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\junhyeok\\.claude\\plugins\\cache\\vercel-vercel-plugin\\vercel-plugin\\0.30.0",
+        "version": "0.30.0",
+        "installedAt": "2026-04-06T10:40:02.393Z",
+        "lastUpdated": "2026-04-06T10:40:02.393Z",
+        "gitCommitSha": "eb3b6f19e9ca59b23c88d7cc8dfe609388be0fc7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────
+# 절대 커밋되면 안 되는 것들 (API 키, 토큰)
+# ─────────────────────────────────────────────
+.env
+.env.local
+*.secrets
+secrets/
+
+# 복원 시 만들어지는 백업 (각 PC 로컬에만)
+backup/
+*.bak
+
+# PowerShell 실행 로그
+*.log
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 실제 키가 들어간 config 임시 파일 (자리표시자 버전만 추적)
+claude_desktop_config.json
+claude_desktop_config.local.json

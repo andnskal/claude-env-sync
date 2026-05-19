@@ -1,0 +1,86 @@
+﻿{
+    "mcpServers":  {
+                       "pyhub.mcptools":  {
+                                              "command":  "C:\\pyhub.mcptools\\pyhub.mcptools.exe",
+                                              "args":  [
+                                                           "run",
+                                                           "stdio"
+                                                       ]
+                                          },
+                       "filesystem":  {
+                                          "command":  "npx",
+                                          "args":  [
+                                                       "-y",
+                                                       "@modelcontextprotocol/server-filesystem",
+                                                       "C:\\Users\\junhyeok\\Desktop",
+                                                       "C:\\Users\\junhyeok\\Documents\\claude-mcp"
+                                                   ]
+                                      },
+                       "sequential-thinking":  {
+                                                   "command":  "npx",
+                                                   "args":  [
+                                                                "-y",
+                                                                "@modelcontextprotocol/server-sequential-thinking"
+                                                            ]
+                                               },
+                       "sqlite":  {
+                                      "command":  "C:\\Users\\junhyeok\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\mcp-server-sqlite.exe",
+                                      "args":  [
+                                                   "--db-path",
+                                                   "C:\\Users\\junhyeok\\Documents\\claude-mcp\\database.db"
+                                               ]
+                                  },
+                       "google-sheets":  {
+                                             "command":  "python",
+                                             "args":  [
+                                                          "D:\\claude\\mcp-google-sheets-extended\\server.py"
+                                                      ]
+                                         }
+                   },
+    "preferences":  {
+                        "chromeExtension":  {
+                                                "pairedDeviceId":  "c134c72e-f4bb-4145-bf51-8234ca9beab8",
+                                                "pairedDeviceName":  "회사용 PC"
+                                            },
+                        "allowAllBrowserActions":  true,
+                        "coworkScheduledTasksEnabled":  true,
+                        "ccdScheduledTasksEnabled":  true,
+                        "sidebarMode":  "chat",
+                        "bypassPermissionsModeEnabled":  true,
+                        "dockBounceEnabled":  true,
+                        "coworkWebSearchEnabled":  true,
+                        "chicagoEnabled":  true,
+                        "epitaxyPrefs":  {
+                                             "starred-local-code-sessions":  [
+
+                                                                             ],
+                                             "starred-cowork-spaces":  [
+                                                                           "5e78689b-6b4b-47c5-ab4e-05824e27e49b",
+                                                                           "b71974da-aa36-41d4-99ec-9f3c8e2a7c8b"
+                                                                       ],
+                                             "starred-session-groups":  [
+
+                                                                        ],
+                                             "dframe-local-slice":  {
+                                                                        "pinnedOrder":  [
+
+                                                                                        ],
+                                                                        "customGroupAssignments":  {
+
+                                                                                                   },
+                                                                        "customGroupOrder":  {
+
+                                                                                             }
+                                                                    },
+                                             "epitaxy-folder-permission-mode.46e56251-80c6-4eaf-b56d-a0eb0cf2d71c":  {
+                                                                                                                         "D:\\claude\\google sheet":  "plan",
+                                                                                                                         "D:\\melkin services AS":  "auto"
+                                                                                                                     },
+                                             "cc-landing-draft-permission-mode":  "plan",
+                                             "epitaxy-perm-mode-acks.46e56251-80c6-4eaf-b56d-a0eb0cf2d71c":  [
+                                                                                                                 "D:\\claude\\google sheet:bypassPermissions",
+                                                                                                                 "D:\\melkin services AS:auto"
+                                                                                                             ]
+                                         }
+                    }
+}
